@@ -19,7 +19,7 @@ class RequestObjectEventListener
         $this->requestBinder = $requestBinder;
     }
 
-    public function onKernelController(FilterControllerEvent $event)
+    public function onKernelController(ControllerEvent $event)
     {
         $request = $event->getRequest();
         $controller = $event->getController();
